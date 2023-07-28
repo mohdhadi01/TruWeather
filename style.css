@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Tektur:regular,500,600,700,800,900);
+:root {
+  --color: #e0e0e0;
+  --textcolor: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--color);
+  font-family: Tektur, serif;
+  font-size: 1rem;
+}
+body,
+html {
+  height: 100%;
+  color: var(--color);
+}
+
+.bgimage {
+  background-image: url("bg.jpg.jpg");
+  filter: blur(10px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.video1 {
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 85%;
+  width: 80%;
+  object-position: center;
+  object-fit: cover;
+  filter: blur(1.8px);
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 85%;
+  width: 80%;
+}
+/* .............................................. */
+
+#sidebar {
+  position: absolute;
+  right: 0;
+  height: 85vh;
+  width: 30vw;
+  background-color: #ffffff10;
+  backdrop-filter: blur(8px);
+  right: -40vw;
+  transition: 0.7s ease-in-out;
+}
+
+#sidebar.active {
+  right: 0;
+}
+#Menu.active {
+  right: 31vw;
+  transform: scale(.6);
+}
+
+#search-icon {
+  cursor: pointer;
+  width: 6vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 3px solid black;
+  /* right: 40vw; */
+}
+
+.enter-city {
+  background: transparent;
+  border: none;
+  color: var(--color);
+  border-bottom: 2px solid #e0e0e0;
+  position: absolute;
+  top: 6vh;
+  left: 3vw;
+}
+input {
+  font-family: Tektur, serif;
+  height: 7vh;
+  width: 19vw;
+}
+ul {
+  padding-top: 10.4vh;
+}
+li {
+  cursor: pointer;
+  display: grid;
+  padding-top: 2vh;
+  position: relative;
+  top: 6vh;
+  left: 3vw;
+  list-style: none;
+}
+.line {
+  padding-top: 5.99vh;
+  border-bottom: 2px solid #e0e0e0;
+  width: 24vw;
+}
+#weather-detail,
+#details {
+  padding-top: 2vh;
+}
+.dev{
+  text-decoration: none;
+  font-size: .8rem;
+  padding-top: 25px;
+}
+/* ..................................... */
+#Menu{
+  cursor: pointer;
+  position: fixed;
+  top: 1.01em;
+  right: 1.2em;
+  height: 4.5em;
+  width: 4.5em;
+  border-radius: 70%;
+  transition: 0.6s ease-in-out;
+}
+#Menu:hover{
+  background-color: #0d0d0d10;
+}
+.menu-line1 {
+  position: absolute;
+   top: 1.3em;
+   left: .85em;
+  width: 5em;
+  width: 45px;
+  height: 7px;
+  background-color: var(--textcolor);
+  box-shadow:  1px 1px #e77503, 0px -4px 10px #e77503;
+}
+.menu-line2 {
+  position: absolute;
+   top: 2.1em;
+   left: .85em;
+  width: 5em;
+  width: 45px;
+  height: 7px;
+  background-color: var(--textcolor);
+  box-shadow:  1px 1px #e77503, 0px -4px 10px #e77503;
+}
+.menu-line3 {
+  position: absolute;
+   top: 2.9em;
+   left: .85em;
+  width: 5em;
+  width: 45px;
+  height: 7px;
+  background-color: var(--textcolor);
+  box-shadow:  1px 1px #e77503, 0px -4px 10px #e77503;
+}
+
+
+/* ...................................... */
+
+header {
+  border-radius: 20px;
+  /* height: 23vh; */
+  height: 310px;
+  /* width: 26vw; */
+  width: 470px;
+  background-color: #0d0d0d10;
+  backdrop-filter: blur(30px);
+  position: absolute;
+  bottom: 15vh;
+  left: 10vw;
+  padding-left: 4%;
+  padding-top: 2.3%;
+}
+.temperature {
+  font-size: 6.1rem;
+  font-weight: 300;
+  color: var(--textcolor);
+}
+footer {
+  position: absolute;
+  bottom: 16vh;
+  left: 10vw;
+  display: flex;
+  gap: 10px;
+  padding-left: 4%;
+}
+.city {
+  font-size: 2.8rem;
+  color: var(--textcolor);
+  font-weight: bold;
+}
+.humidity {
+  font-size: 1.1rem;
+  /* color: var(--textcolor); */
+  padding-bottom: 10px;
+}
+.wind {
+  font-size: 1.1rem;
+  /* color: var(--textcolor); */
+  /* padding-top: 5px; */
+}
+.condition {
+  font-size: 1.1rem;
+  /* color: var(--textcolor); */
+  padding-bottom: 10px;
+}
+
+.icon {
+  position: absolute;
+  bottom: 125px;
+  left: 110px;
+}
+#truweather {
+  /* backdrop-filter: blur(114px); */
+  text-shadow: 2px 7px 5px #e77503, 0px -4px 10px #e77503;
+  color: #ffffff;
+  position: absolute;
+  top: 4vh;
+  left: 4vw;
+  font-size: 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
+}
