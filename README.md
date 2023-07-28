@@ -1,6 +1,6 @@
 # TruWeather     
-link - https://truweather.netlify.app/
 TruWeather App is a website which tells about the weather of desired location .
+link - https://truweather.netlify.app/
 Technology used: HTML
                : CSS
                : Javascript
