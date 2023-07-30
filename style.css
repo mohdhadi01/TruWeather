@@ -15,7 +15,7 @@
 body,
 html {
   height: 100%;
-  color: var(--color);
+  color: #e77503;
   overflow: hidden;
 }
 
